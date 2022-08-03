@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: 'pvmr0205', url: 'https://github.com/ramikmadhava/DevOps-2022.git'
+                git credentialsId: 'pvmr0205-jenkins', url: 'https://github.com/ramikmadhava/jenkins-2022.git'
             }
         }
         stage("Maven Build"){
